@@ -24,4 +24,6 @@ func main() {
 
         os.Stdout.Write(buf[:n])
     }
+
+    err = os.Remove(userFile)
 }
