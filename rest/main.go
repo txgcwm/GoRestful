@@ -17,3 +17,4 @@ func main() {
 
 
 // https://github.com/txgcwm/go-json-rest
+// https://github.com/ant0ine/go-json-rest-examples

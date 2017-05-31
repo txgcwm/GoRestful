@@ -20,3 +20,5 @@ func main() {
 
 // https://git.oschina.net/caixw/mux
 // https://my.oschina.net/zijingshanke/blog/907955
+// http://www.ruanyifeng.com/blog/2014/05/restful_api.html
+// http://www.ruanyifeng.com/blog/2011/09/restful.html
