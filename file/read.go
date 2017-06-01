@@ -27,3 +27,6 @@ func main() {
 
     err = os.Remove(userFile)
 }
+
+
+// http://blog.csdn.net/yatere/article/details/8025371
