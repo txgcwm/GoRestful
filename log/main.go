@@ -21,7 +21,7 @@ import (
 func main() {
 	// use JSONFormatter
 	log.SetFormatter(&logmatic.JSONFormatter{})
-	
+
 	contextLogger := log.WithFields(log.Fields{
 		"common": "XXX common content XXX",
 		"other": "YYY special context YYY",
@@ -30,7 +30,15 @@ func main() {
 	contextLogger.Info("AAAAAAAAAAAA")
 	contextLogger.Info("BBBBBBBBBBBB")
 
-	
+	log.Debug("Useful debugging information.")
+	log.Info("Something noteworthy happened!")
+	log.Warn("You should probably take a look at this.")
+	log.Error("Something failed but I'm not quitting.")
+	// Calls os.Exit(1) after logging
+	log.Fatal("Bye.")
+	// Calls panic() after logging
+	log.Panic("I'm bailing.")
+
 	// // log an event as usual with logrus
 	// log.WithFields(log.Fields{"string": "foo", "int": 1, "float": 1.1 }).Info("My first ssl event from golang")
 }
