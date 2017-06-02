@@ -19,3 +19,5 @@
 [微内核 Go 语言 Web 框架 go-tango](https://www.oschina.net/p/go-tango)
 
 [buntdb](https://github.com/tidwall/buntdb)
+
+[awesome-go](https://github.com/avelino/awesome-go)
