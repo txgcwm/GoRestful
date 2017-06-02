@@ -13,3 +13,5 @@
 [Go 应用框架 beego](https://www.oschina.net/p/beego)
 
 [实时消息通信平台 Centrifugo](https://www.oschina.net/p/centrifugal)
+
+[Go Concurrency 实战](https://my.oschina.net/tjt/blog/910153)
