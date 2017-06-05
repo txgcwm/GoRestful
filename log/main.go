@@ -18,9 +18,17 @@ import (
 // 	log.Println("==========works==============")
 // }
 
+func Info(v ...interface{}) {
+	log.Info(v)
+}
+
 func main() {
 	// use JSONFormatter
 	log.SetFormatter(&logmatic.JSONFormatter{})
+
+	name := "ceshijia"
+
+	Info("name: ", name)
 
 	contextLogger := log.WithFields(log.Fields{
 		"common": "XXX common content XXX",
