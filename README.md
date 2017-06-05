@@ -4,6 +4,8 @@
 
 [编写可测试的Go代码](http://tabalt.net/blog/golang-testing/)
 
+[go-ini](https://github.com/go-ini/ini/blob/master/README_ZH.md)
+
 [The-Golang-Standard-Library-by-Example](https://github.com/polaris1119/The-Golang-Standard-Library-by-Example)
 
 [Go 实现的直播服务 livego](https://www.oschina.net/p/live-go)
