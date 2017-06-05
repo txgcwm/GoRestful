@@ -8,19 +8,16 @@ import (
 	"strings"
 )
 
-//申明一个map到时候存取配置文件
-var per map[string]interface{}
-
 func main() {
-	//实例化这个map
-	per = make(map[string]interface{})
-	//打开这个ini文件
-	f, _ := os.Open("test.ini")
-	//读取文件到buffer里边
-	buf := bufio.NewReader(f)
+	var per map[string]interface{} //申明一个map到时候存取配置文件
+	
+	per = make(map[string]interface{}) //实例化这个map
+	
+	f, _ := os.Open("test.ini") //打开这个ini文件
+	
+	buf := bufio.NewReader(f) //读取文件到buffer里边
 	for {
-		//按照换行读取每一行
-		l, err := buf.ReadString('\n')
+		l, err := buf.ReadString('\n') //按照换行读取每一行
 		//相当于PHP的trim
 		line := strings.TrimSpace(l)
 		//判断退出循环
@@ -37,10 +34,12 @@ func main() {
 
 		switch {
 		case len(line) == 0:
-		//匹配[db]然后存储
+			//匹配[db]然后存储
+
 		case line[0] == '[' && line[len(line)-1] == ']':
 			section := strings.TrimSpace(line[1 : len(line)-1])
 			fmt.Println(section)
+
 		default :
 			//dnusername = xiaowei 这种的可以匹配存储
 			i := strings.IndexAny(line, "=")
